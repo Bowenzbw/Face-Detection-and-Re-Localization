@@ -15,7 +15,6 @@ def mark_face(im_array, dets, landmarks, save_name, mark):
     import pylab
 
     figure = pylab.figure(dpi=600)
-    # plt.subplot(121)
     pylab.imshow(im_array)
 
     for i in range(dets.shape[0]):
@@ -54,15 +53,6 @@ def mark_face(im_array, dets, landmarks, save_name, mark):
                               alpha=0.4,
                               color="red")
                 pylab.gca().add_patch(cir1)
-                # plt.gca().text(bbox[0], bbox[1] - 2,
-                #                '{:.3f}'.format(score),
-                #                bbox=dict(facecolor='blue', alpha=0.5), fontsize=12, color='white')
-                # else:
-                #     rect = plt.Rectangle((bbox[0], bbox[1]),
-                #                          bbox[2] - bbox[0],
-                #                          bbox[3] - bbox[1], fill=False,
-                #                          edgecolor=color, linewidth=0.5)
-                #     plt.gca().add_patch(rect)
         pylab.axis('off')
         pylab.savefig(save_name, bbox_inches='tight', pad_inches=0, dpi=72)
         # pylab.show()
