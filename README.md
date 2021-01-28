@@ -11,4 +11,4 @@ Normalize: The package includes the test images divided into sub-images, the
 face_compare.py: This is the main function to compare face images between the 
   original image and the target image.
 
-Mark: Relocalize the face images and helight the images that belong to the same person. 
+Mark: Re-Localize the face images and helight the images that belong to the same person. 
